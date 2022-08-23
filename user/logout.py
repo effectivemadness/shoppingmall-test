@@ -29,4 +29,4 @@ if __name__ == '__main__':
     # user_set()
     while True:
         user_logout_test()
-        time.sleep(random.randrange(0, 2))
+        time.sleep(random.random())

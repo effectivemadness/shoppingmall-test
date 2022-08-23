@@ -60,6 +60,6 @@ if __name__ == '__main__':
     # user_set()
     while True:
         user_signin_test()
-        time.sleep(random.randrange(0, 2))
+        time.sleep(random.random())
         user_leave_test()
-        time.sleep(random.randrange(0, 2))
+        time.sleep(random.random())

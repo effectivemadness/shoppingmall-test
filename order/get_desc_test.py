@@ -23,4 +23,4 @@ if __name__ == '__main__':
     # user_set()
     while True:
         order_get_desc_test()
-        time.sleep(random.randrange(0, 2))
+        time.sleep(random.random())

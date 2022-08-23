@@ -19,4 +19,4 @@ if __name__ == '__main__':
     # user_set()
     while True:
         prod_get_list_test()
-        time.sleep(random.randrange(0, 2))
+        time.sleep(random.random())
