@@ -29,9 +29,6 @@ def prod_register_test():
         prod_list.append(prod_id)
     except requests.exceptions.RequestException:
         print('HTTP Request failed')
-    sleep_time = random.random() / 100
-    print(f"sleeping {sleep_time}")
-    time.sleep(sleep_time)
 
 
 def prod_delete_test():
@@ -56,12 +53,11 @@ def prod_delete_test():
         prod_list.remove(prod_id)
     except requests.exceptions.RequestException:
         print('HTTP Request failed')
-    sleep_time = random.random() / 100
-    print(f"sleeping {sleep_time}")
-    time.sleep(sleep_time)
 
 if __name__ == '__main__':
     # user_set()
     while True:
         prod_register_test()
+        time.sleep(random.randrange(0, 2))
         prod_delete_test()
+        time.sleep(random.randrange(0, 2))

@@ -23,12 +23,10 @@ def user_login_test():
             content=response.content))
     except requests.exceptions.RequestException:
         print('HTTP Request failed')
-    sleep_time = random.random() / 100
-    print(f"sleeping {sleep_time}")
-    time.sleep(sleep_time)
 
 
 if __name__ == '__main__':
     # user_set()
     while True:
         user_login_test()
+        time.sleep(random.randrange(0, 2))

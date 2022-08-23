@@ -29,9 +29,6 @@ def user_signin_test():
         user_list.append(uid)
     except requests.exceptions.RequestException:
         print('HTTP Request failed')
-    sleep_time = random.random() / 100
-    print(f"sleeping {sleep_time}")
-    time.sleep(sleep_time)
 
 
 def user_leave_test():
@@ -57,13 +54,12 @@ def user_leave_test():
         user_list.remove(uid)
     except requests.exceptions.RequestException:
         print('HTTP Request failed')
-    sleep_time = random.random() / 100
-    print(f"sleeping {sleep_time}")
-    time.sleep(sleep_time)
 
 
 if __name__ == '__main__':
     # user_set()
     while True:
         user_signin_test()
+        time.sleep(random.randrange(0, 2))
         user_leave_test()
+        time.sleep(random.randrange(0, 2))
