@@ -19,4 +19,4 @@ if __name__ == '__main__':
     # user_set()
     while True:
         order_get_list_test()
-        time.sleep(random.random())
+        time.sleep(random.random()/10)

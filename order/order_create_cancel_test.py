@@ -57,6 +57,6 @@ if __name__ == '__main__':
     # user_set()
     while True:
         order_create_test()
-        time.sleep(random.random())
+        time.sleep(random.random()/10)
         order_cancel_test()
-        time.sleep(random.random())
+        time.sleep(random.random()/10)
