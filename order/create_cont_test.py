@@ -44,4 +44,4 @@ if __name__ == '__main__':
     while True:
         order_create_test_cont(order_id)
         order_id += 1
-        time.sleep(random.randrange(0, 3))
+        time.sleep(random.randrange(30, 120))
